@@ -22,5 +22,5 @@ detection:
             - 'ThrottleRate'
     condition: all of selection_*
 falsepositives:
-    - Unknown
-level: high
+    - Legitimate QOS throttle modification
+level: medium # Change the lvl accordingly after initial baselining
