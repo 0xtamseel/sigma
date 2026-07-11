@@ -1,7 +1,11 @@
 title: QoS ThrottleRate Set by WMI
 id: e4b2d9a1-8f3a-4c9b-9e2a-1d7f6b5a3c21
 status: experimental
-description: Detects when a QoS with ThrottleRate policy is created by Windows Management Instrumentation provider service. This behavior is an indication of EDR suppression where an attacker severs the communication between the agent and the management server for telemetry and alerting.
+description: |
+    Detects when a Quality of Service (QoS) Throttle Rate policy is created/updated by the Windows Management
+    Instrumentation (WMI) provider service (wmiprvse.exe). Threat actors use WMI to remotely script or automate
+    changes. They abuse this feature to choke outbound EDR connection, ulitimately bypassing EDR, slow down
+    data leaks to bypass filters, or cause intentional denial-of-service conditions on critical communication apps.
 author: Tamseel Ahmad
 references:
     - https://learn.microsoft.com/en-us/windows-server/networking/technologies/qos/qos-policy-top
