@@ -8,8 +8,9 @@ references:
     - https://www.zerosalarium.com/2026/06/edrchoker-choking-telemetry-stream-block-edr.html
 date: 2026-06-12
 tags:
-    - attack.defense_evasion
-    - attack.t1562.001
+    - attack.defense-impairment
+    - attack.t1687
+    - attack.t1685
 logsource:
     product: windows
     category: registry_event
