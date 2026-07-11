@@ -13,7 +13,7 @@ logsource:
     product: windows
     category: registry_event
 detection:
-    selection_reistry:
+    selection:
         Image|endswith: '\wmiprvse.exe'
         TargetObject|contains|all:
             - '\Software\Policies\Microsoft\Windows\QoS\'
