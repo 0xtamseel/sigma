@@ -6,10 +6,10 @@ description: |
     Instrumentation (WMI) provider service (wmiprvse.exe). Threat actors use WMI to remotely script or automate
     changes. They abuse this feature to choke outbound EDR connection, ulitimately bypassing EDR, slow down
     data leaks to bypass filters, or cause intentional denial-of-service conditions on critical communication apps.
-author: Tamseel Ahmad
 references:
     - https://learn.microsoft.com/en-us/windows-server/networking/technologies/qos/qos-policy-top
     - https://www.zerosalarium.com/2026/06/edrchoker-choking-telemetry-stream-block-edr.html
+author: Tamseel Ahmad
 date: 2026-06-12
 tags:
     - attack.defense-impairment
