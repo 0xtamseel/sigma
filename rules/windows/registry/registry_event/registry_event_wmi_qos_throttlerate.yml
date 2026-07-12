@@ -24,7 +24,7 @@ detection:
         TargetObject|contains|all:
             - '\Software\Policies\Microsoft\Windows\QoS\'
             - 'ThrottleRate'
-    condition: all of selection_*
+    condition: selection
 falsepositives:
     - Legitimate QOS throttle modification
 level: medium # Change the lvl accordingly after initial baselining
